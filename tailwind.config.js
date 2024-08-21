@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         'display': ['Poppins', 'sans-serif'],
         'body': ['Inter', 'sans-serif']
+      },
+      colors: {
+        'primary': '#D8BFD8'
       }
     },
   },

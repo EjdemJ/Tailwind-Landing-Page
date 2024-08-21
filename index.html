@@ -15,8 +15,23 @@
                 <img class="object-center max-w-12 max-h-12 rounded-full"  src="./assets/logo.jpg" alt="Logo">
                 <span class="text-lg font-medium font-display">Collabo</span>
             </a>
-            <button class="cursor-pointer" onclick="handleMenu()">
-                <i class="fa-solid fa-bars"></i>
+
+            <div id="nav-menu" class="hidden md:flex gap-12">
+                <a href="#" class="font-medium hover:text-primary " >Pricing</a>
+                <a href="#" class="font-medium hover:text-primary " >Docs</a>
+                <a href="#" class="font-medium hover:text-primary " >Discord</a>
+                <a href="#" class="font-medium hover:text-primary " >Blogs</a>
+            </div>
+
+            <button class="hidden md:flex gap-2 group items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 transition-all hover:bg-primary  ">
+                <span>Electron Developers </span>
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-2 group-hover:rotate-180 transition-all"></i>
+                
+            </button>
+
+
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-600"></i>
             </button>        
         </nav>
     </body>
