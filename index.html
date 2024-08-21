@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet">
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-</head>
-
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <i class="fa-solid fa-house"></i>
-</body>
-
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="./output.css" rel="stylesheet">
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    </head>
+    <body>
+    <!-- Navbar  -->
+        <nav class=" p-3 bg-white flex justify-between items-center">
+            <a href="#" id="brand" class="flex gap-2 items-center">
+                <img class="object-center max-w-12 max-h-12 rounded-full"  src="./assets/logo.jpg" alt="Logo">
+                <span class="text-lg font-medium font-display">Collabo</span>
+            </a>
+            <button class="cursor-pointer" onclick="handleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>        
+        </nav>
+    </body>
+    
 </html>
