@@ -1,3 +1,5 @@
+const mobileMenu = document.getElementById("mobile-menu");
+
 function handleMenu() {
-    console.log("Hello")
+  mobileMenu.classList.toggle("mobile-menu-hidden");
 }

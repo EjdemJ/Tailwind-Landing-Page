@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="./output.css" rel="stylesheet">
-        <script src="./script.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar  -->
-        <nav class=" p-3 bg-white flex justify-between items-center">
-            <a href="#" id="brand" class="flex gap-2 items-center">
-                <img class="object-center max-w-12 max-h-12 rounded-full"  src="./assets/logo.jpg" alt="Logo">
-                <span class="text-lg font-medium font-display">Collabo</span>
-            </a>
+    <nav class="p-3 bg-white flex justify-between items-center relative">
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img
+          class="object-center max-w-12 max-h-12 rounded-full"
+          src="./assets/logo.jpg"
+          alt="Logo"
+        />
+        <span class="text-lg font-medium font-display">Collabo</span>
+      </a>
+      <div id="nav-menu" class="hidden md:flex gap-12">
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">Discord</a>
+        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+      </div>
 
-            <div id="nav-menu" class="hidden md:flex gap-12">
-                <a href="#" class="font-medium hover:text-primary " >Pricing</a>
-                <a href="#" class="font-medium hover:text-primary " >Docs</a>
-                <a href="#" class="font-medium hover:text-primary " >Discord</a>
-                <a href="#" class="font-medium hover:text-primary " >Blogs</a>
-            </div>
-
-            <button class="hidden md:flex gap-2 group items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 transition-all hover:bg-primary  ">
-                <span>Electron Developers </span>
-                <i class="fa-solid fa-arrow-right group-hover:translate-x-2 group-hover:rotate-180 transition-all"></i>
-                
-            </button>
-
-
-            <button class="p-2 md:hidden" onclick="handleMenu()">
-                <i class="fa-solid fa-bars text-gray-600"></i>
-            </button>        
-        </nav>
-    </body>
-    
+      <button
+        class="hidden md:flex gap-2 group items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600 transition-all hover:bg-primary"
+      >
+        <span>Electron Developers </span>
+        <i
+          class="fa-solid fa-arrow-right group-hover:translate-x-2 group-hover:rotate-180 transition-all"
+        ></i>
+      </button>
+      <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+      <div
+        class="absolute w-screen h-screen inset-0 bg-slate-400 transition-all duration-500 ease-in-out"
+        id="mobile-menu"
+      >
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">Discord</a>
+        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+      </div>
+    </nav>
+  </body>
 </html>
