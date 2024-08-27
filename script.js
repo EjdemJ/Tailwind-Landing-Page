@@ -1,5 +1,13 @@
 const mobileMenu = document.getElementById("mobile-menu");
+const closeBtn = document.getElementById("close-mobile-menu");
+const hamburger = document.getElementById("hamburger");
 
-function handleMenu() {
-  mobileMenu.classList.toggle("mobile-menu-hidden");
-}
+hamburger.addEventListener(
+  "click",
+  () => (mobileMenu.style.transform = "translateY(0)")
+);
+
+closeBtn.addEventListener(
+  "click",
+  () => (mobileMenu.style.transform = "translateY(-100%)")
+);
